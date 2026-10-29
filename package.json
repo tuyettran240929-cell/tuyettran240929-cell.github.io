@@ -1,0 +1,31 @@
+{
+  "name": "thu_tuyet.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuyettran240929-cell/tuyettran240929-cell.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tuyettran240929-cell/tuyettran240929-cell.github.io/issues"
+  },
+  "homepage": "https://github.com/tuyettran240929-cell/tuyettran240929-cell.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.5"
+  }
+}
