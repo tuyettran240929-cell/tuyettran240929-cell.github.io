@@ -1,43 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://unsplash.com/photos/E-fUZYaqFRs/download?force=true&w=1920');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thu Tuyet's Portfolio</title>
 </head>
-
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-        Thu Tuyet
+  <main>
+    <!-- banner -->
+    <section
+      class="min-h-screen w-full flex flex-col justify-center items-center bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/banner.jpg')] bg-cover bg-center">
+      <div class="w-full lg:w-[80%] p-12 text-white">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-10 grid grid-cols-1 gap-3 lg:gap-5 drop-shadow-lg">
+          <span>Hi, my name is <span class="text-blue-300">Tran Thi Thu Tuyet</span></span>
+          <span>I'm an IT Student.</span>
+        </h1>
+
+        <a href="#about-me"
+          class="inline-block uppercase border-2 border-white px-8 py-3 hover:bg-white hover:text-blue-800 transition-colors cursor-pointer">
+          <span class="text-xl font-light">Know more</span>
+        </a>
+      </div>
+    </section>
+    <!-- banner ./ -->
+
+    <!-- about me -->
+    <section id="about-me"
+      class="bg-blue-800 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+      <div class="w-full lg:w-[80%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-3">
+          <div class="flex justify-center items-center text-center col-span-1">
+            <img class="object-cover max-w-xs lg:w-auto rounded-lg" src="/avatar.png"
+              title="My avatar" alt="Tran Thi Thu Tuyet" />
+          </div>
+          <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+            <div class="p-0 text-center lg:p-8 lg:text-start">
+              <p class="pb-3 text-lg font-light mb-5">
+                I'm an IT student at VNUK – The University of Da Nang. I enjoy programming,
+                building websites, and learning new technologies. My goal is to become a
+                skilled software engineer who creates useful and meaningful products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me ./ -->
+
+    <!-- contact -->
+    <section id="contact"
+      class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+      <div class="w-full lg:w-[60%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
+        <p class="flex flex-col justify-center items-center pt-5 pb-5 text-center">
+          <span class="text-2xl text-blue-800 mb-3">I LOOK FORWARD TO WORKING WITH YOU</span>
+          <span>I'm so happy that my skills might bring value to you. Let's connect!</span>
+        </p>
+      </div>
+      <a href="mailto:tuyet.tran240929@vnuk.udn.vn?subject=Hi Tuyet, I want to connect with you&body=Please describe your work or project requirements"
+        class="border-2 border-blue-800 px-8 py-3 bg-blue-800 text-white hover:bg-white hover:text-blue-800 transition-colors cursor-pointer">
+        <span class="text-xl uppercase font-light">Send An Email Now</span>
+      </a>
+    </section>
+    <!-- contact ./ -->
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-neutral-900 min-h-[300px] py-12 flex flex-row justify-center items-center">
+    <div class="w-[90%] lg:w-[60%] flex flex-col justify-center items-center">
+      <ul class="flex flex-row">
+        <li class="px-4 cursor-pointer transition-transform hover:-translate-y-2">
+          <!-- TODO: đổi "your-username" thành tên tài khoản GitHub của bạn -->
+          <a href="https://github.com/tuyettran240929-cell" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0" src="/github.png" alt="GitHub" />
+          </a>
+        </li>
+      </ul>
+
+      <hr class="w-1/2 border-gray-500 mt-10" />
+      <p class="text-lg text-gray-500 mt-5">©2026 - Tran Thi Thu Tuyet</p>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
-    </div>
-  </div>
+  </footer>
+  <!-- footer ./ -->
+
   <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
